@@ -6,15 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Tour of Heroes';
-  display=false;
+  title = 'Dotan Shop';
+  msg = "";
 
-  toggle() {
-  this.display = !this.display;
-
-  if(this.display)  
-    this.title = "";
-  else
-    this.title = 'Tour of Heroes'
-}
+  buyItem(){
+    this.msg = (this.msg ? "" : "Thank you for your order!");
+  }
 }
